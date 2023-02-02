@@ -14,10 +14,10 @@ namespace CuarAuthentication.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCors(Configuration);
+            //services.AddCors(Configuration);
             services.AddDbContext(Configuration);
             services.AddIdentity();
-            services.AddAuthenticationConfiguration(Configuration);
+            //services.AddAuthenticationConfiguration(Configuration);
             services.AddMapper();
             services.AddApplicationServices();
             services.AddSwagger();
@@ -36,6 +36,7 @@ namespace CuarAuthentication.API
             {
                 app.UseCors("CORS");
             }
+            app.UseRouting();
             app.UseAuthentication();
             app.UseSwagger();
             app.UseSwaggerUI(c =>

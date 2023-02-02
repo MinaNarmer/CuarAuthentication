@@ -19,31 +19,31 @@ namespace CuarAuthentication.API
 {
     public static class ServiceCollectionExtensions
     {
-        public static void AddCors(this IServiceCollection services, IConfiguration Configuration)
-        {
-            services.AddCors(options =>
-            {
-                options.AddPolicy("CORS", corsPolicyBuilder => corsPolicyBuilder.WithOrigins(Configuration["MyConfig:AllowedURL"])
-                    // Apply CORS policy for any type of origin  
-                    .AllowAnyMethod()
-                    // Apply CORS policy for any type of http methods  
-                    .AllowAnyHeader()
-                    // Apply CORS policy for any headers  
-                    .AllowCredentials());
-                // Apply CORS policy for all users  
-            });
-            services.AddCors(options =>
-            {
-                options.AddPolicy("CORSDev", corsPolicyBuilder => corsPolicyBuilder.WithOrigins(Configuration["MyConfigDev:AllowedURL"])
-                    // Apply CORS policy for any type of origin  
-                    .AllowAnyMethod()
-                    // Apply CORS policy for any type of http methods  
-                    .AllowAnyHeader()
-                    // Apply CORS policy for any headers  
-                    .AllowCredentials());
-                // Apply CORS policy for all users  
-            });
-        }
+        //public static void AddCors(this IServiceCollection services, IConfiguration Configuration)
+        //{
+        //    services.AddCors(options =>
+        //    {
+        //        options.AddPolicy("CORS", corsPolicyBuilder => corsPolicyBuilder.WithOrigins(Configuration["MyConfig:AllowedURL"])
+        //            // Apply CORS policy for any type of origin  
+        //            .AllowAnyMethod()
+        //            // Apply CORS policy for any type of http methods  
+        //            .AllowAnyHeader()
+        //            // Apply CORS policy for any headers  
+        //            .AllowCredentials());
+        //        // Apply CORS policy for all users  
+        //    });
+        //    services.AddCors(options =>
+        //    {
+        //        options.AddPolicy("CORSDev", corsPolicyBuilder => corsPolicyBuilder.WithOrigins(Configuration["MyConfigDev:AllowedURL"])
+        //            // Apply CORS policy for any type of origin  
+        //            .AllowAnyMethod()
+        //            // Apply CORS policy for any type of http methods  
+        //            .AllowAnyHeader()
+        //            // Apply CORS policy for any headers  
+        //            .AllowCredentials());
+        //        // Apply CORS policy for all users  
+        //    });
+        //}
         public static void AddDbContext(this IServiceCollection services, IConfiguration Configuration)
         {
             services.AddDbContext<CuraAuthDbContext>(options =>
@@ -149,8 +149,8 @@ namespace CuarAuthentication.API
                             new List<string>()
                          }
                    });
-                   var filePath = Path.Combine(AppContext.BaseDirectory, "CuarAuthentication.API.xml");
-                   options.IncludeXmlComments(filePath);
+                   //var filePath = Path.Combine(AppContext.BaseDirectory, "CuarAuthentication.API.xml");
+                   //options.IncludeXmlComments(filePath);
                });
         }
 

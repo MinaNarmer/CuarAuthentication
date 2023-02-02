@@ -6,7 +6,7 @@ namespace CuarAuthentication.Domain.Identity
 {
     public class ApplicationUser : IdentityUser<int>, IDeletedEntity, IAuditEntity
     {
-        public string RefreshToken { get; set; }
+        public string? RefreshToken { get; set; }
         public bool IsActive { get; set; }
         public bool IsDeleted { get; set; }
         public DateTime? DeletionDate { get; set; }
