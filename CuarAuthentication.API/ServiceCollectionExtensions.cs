@@ -1,6 +1,11 @@
 ﻿using AutoMapper;
 using CuarAuthentication.Domain.Context;
 using CuarAuthentication.Domain.Identity;
+using CuarAuthentication.Domain.IPersistance;
+using CuarAuthentication.Domain.Persistance;
+using CuarAuthentication.DomainService.Helpers;
+using CuarAuthentication.DomainService.IServices;
+using CuarAuthentication.DomainService.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;

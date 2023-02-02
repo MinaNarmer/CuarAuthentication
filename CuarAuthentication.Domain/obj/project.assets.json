@@ -916,11 +916,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mina Ibrahem\\Source\\Repos\\CuarAuthentication\\CuarAuthentication.Domain\\CuarAuthentication.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Mina Ibrahem\\source\\repos\\CuarAuthentication\\CuarAuthentication.Domain\\CuarAuthentication.Domain.csproj",
       "projectName": "CuarAuthentication.Domain",
-      "projectPath": "C:\\Users\\Mina Ibrahem\\Source\\Repos\\CuarAuthentication\\CuarAuthentication.Domain\\CuarAuthentication.Domain.csproj",
+      "projectPath": "C:\\Users\\Mina Ibrahem\\source\\repos\\CuarAuthentication\\CuarAuthentication.Domain\\CuarAuthentication.Domain.csproj",
       "packagesPath": "C:\\Users\\Mina Ibrahem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mina Ibrahem\\Source\\Repos\\CuarAuthentication\\CuarAuthentication.Domain\\obj\\",
+      "outputPath": "C:\\Users\\Mina Ibrahem\\source\\repos\\CuarAuthentication\\CuarAuthentication.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mina Ibrahem\\AppData\\Roaming\\NuGet\\NuGet.Config",

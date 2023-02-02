@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CuarAuthentication.DomainService\CuarAuthentication.DomainService.csproj" />
     <ProjectReference Include="..\CuarAuthentication.Domain\CuarAuthentication.Domain.csproj" />
   </ItemGroup>
 

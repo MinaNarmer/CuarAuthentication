@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using CuarAuthentication.DomainService.Dtos;
+using System.Threading.Tasks;
 
 namespace CuarAuthentication.DomainService.IServices
 {

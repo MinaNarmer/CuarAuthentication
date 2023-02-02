@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CuarAuthentication.API", "C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CuarAuthentication.Domain", "CuarAuthentication.Domain\CuarAuthentication.Domain.csproj", "{4644B99D-E689-46EB-89BC-A203286CA153}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CuarAuthentication.DomainService", "CuarAuthentication.DomainService\CuarAuthentication.DomainService.csproj", "{708DA5CC-9357-469A-89D2-2D1A9A53804C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4644B99D-E689-46EB-89BC-A203286CA153}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4644B99D-E689-46EB-89BC-A203286CA153}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4644B99D-E689-46EB-89BC-A203286CA153}.Release|Any CPU.Build.0 = Release|Any CPU
+		{708DA5CC-9357-469A-89D2-2D1A9A53804C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{708DA5CC-9357-469A-89D2-2D1A9A53804C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{708DA5CC-9357-469A-89D2-2D1A9A53804C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{708DA5CC-9357-469A-89D2-2D1A9A53804C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,5 +1,5 @@
-﻿using MRS.Data.Constants;
-using MRS.Services.Infrastructure.IServices;
+﻿using CuarAuthentication.Domain.Constants;
+using CuarAuthentication.DomainService.IServices;
 using System.Collections.Generic;
 
 namespace CuarAuthentication.DomainService.Services
@@ -8,7 +8,7 @@ namespace CuarAuthentication.DomainService.Services
     {
         public List<string> GetRoles()
         {
-            return new List<string>() { RolesNames.Admin, RolesNames.User };
+            return new List<string>() { RolesNames.Admin, RolesNames.Player };
         }
 
     }

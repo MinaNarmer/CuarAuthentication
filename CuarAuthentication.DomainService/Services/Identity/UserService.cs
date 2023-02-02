@@ -1,6 +1,13 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using CuarAuthentication.Domain.Constants;
+using CuarAuthentication.Domain.Helpers;
+using CuarAuthentication.Domain.Identity;
+using CuarAuthentication.DomainService.Dtos;
+using CuarAuthentication.DomainService.IServices;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
