@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CuarAuthentication.API", "CuarAuthentication.API\CuarAuthentication.API.csproj", "{BF4BA71B-959F-4565-97E5-DA0C3FD933C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CuarAuthentication.Domain", "CuarAuthentication.Domain\CuarAuthentication.Domain.csproj", "{4644B99D-E689-46EB-89BC-A203286CA153}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF4BA71B-959F-4565-97E5-DA0C3FD933C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF4BA71B-959F-4565-97E5-DA0C3FD933C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF4BA71B-959F-4565-97E5-DA0C3FD933C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF4BA71B-959F-4565-97E5-DA0C3FD933C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4644B99D-E689-46EB-89BC-A203286CA153}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4644B99D-E689-46EB-89BC-A203286CA153}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4644B99D-E689-46EB-89BC-A203286CA153}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4644B99D-E689-46EB-89BC-A203286CA153}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54B4E70F-E914-4D5C-8A2D-27E2B2EF6F8E}
+	EndGlobalSection
+EndGlobal
