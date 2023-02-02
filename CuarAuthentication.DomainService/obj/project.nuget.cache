@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "S64rjH7UcywNCvxyxnxWCFQ40YSQFeOFe51kbrlxhH0LZHwzXKm81BKEHJakXFhuyhpcqeHCKr3w8R+xkqd55w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Mina Ibrahem\\Source\\Repos\\CuarAuthentication\\CuarAuthentication.DomainService\\CuarAuthentication.DomainService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Mina Ibrahem\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.7\\microsoft.aspnetcore.app.ref.6.0.7.nupkg.sha512",
+    "C:\\Users\\Mina Ibrahem\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.7\\microsoft.windowsdesktop.app.ref.6.0.7.nupkg.sha512",
+    "C:\\Users\\Mina Ibrahem\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.7\\microsoft.netcore.app.ref.6.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}
