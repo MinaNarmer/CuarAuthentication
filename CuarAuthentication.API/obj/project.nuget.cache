@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bcLG1KJGiIhQJlex2GsqEt4cqtSDgnj1Dyrphq7SjJT00W3VBGzVBWB1uzyUZuerEEcQqPubJDDo1aVVsq46cQ==",
+  "dgSpecHash": "9g2i6OxxF1e0incrM/lsKMnc6DPJMeqMteGHjvlEyWrRE5kiZw6cBqD9BWYl6a/t708mWC+/MvfVgHnewLGOww==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mina Ibrahem\\Source\\Repos\\CuarAuthentication\\CuarAuthentication.API\\CuarAuthentication.API.csproj",
+  "projectFilePath": "C:\\Users\\Mina Ibrahem\\source\\repos\\CuarAuthentication\\CuarAuthentication.API\\CuarAuthentication.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mina Ibrahem\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Mina Ibrahem\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.12\\microsoft.aspnetcore.authentication.jwtbearer.6.0.12.nupkg.sha512",

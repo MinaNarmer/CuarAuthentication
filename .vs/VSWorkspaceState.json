@@ -1,7 +1,17 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CuarAuthentication.Domain",
+    "\\CuarAuthentication.DomainService",
+    "\\CuarAuthentication.DomainService\\Helpers",
+    "\\CuarAuthentication.DomainService\\Helpers\\MapperConfig",
+    "\\CuarAuthentication.DomainService\\IServices",
+    "\\CuarAuthentication.DomainService\\IServices\\Identity",
+    "\\CuarAuthentication.DomainService\\Services",
+    "\\CuarAuthentication.DomainService\\Services\\Identity",
+    "\\CuarAuthentication.Domain\\IPersistance",
+    "\\CuarAuthentication.Domain\\Persistance"
   ],
-  "SelectedNode": "\\C:\\Users\\Mina Ibrahem\\Source\\Repos\\CuarAuthentication",
+  "SelectedNode": "\\CuarAuthentication.DomainService\\CuarAuthentication.DomainService.csproj",
   "PreviewInSolutionExplorer": false
 }
