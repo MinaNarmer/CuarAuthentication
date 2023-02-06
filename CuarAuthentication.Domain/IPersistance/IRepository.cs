@@ -84,7 +84,6 @@ namespace CuarAuthentication.Domain.IPersistance
         /// </summary>
         IQueryable<T> TableNoTracking { get; }
 
-        T GetByIdRelatedTable(object id, params Expression<Func<T, object>>[] includeProperties);
 
         #region Async
 
@@ -119,7 +118,6 @@ namespace CuarAuthentication.Domain.IPersistance
         /// </summary>
         /// <param name="id">Identifier</param>
         /// <returns>Entity</returns>
-        Task<T> GetByIdRelatedTableAsync(object id, params Expression<Func<T, object>>[] includeProperties);
 
         #endregion
     }

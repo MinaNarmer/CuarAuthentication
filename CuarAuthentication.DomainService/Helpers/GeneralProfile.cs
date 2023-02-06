@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
-
+using CuarAuthentication.Domain.Features;
+using CuarAuthentication.DomainService.Dtos.UserFeature;
 
 namespace CuarAuthentication.DomainService.Helpers
 {
@@ -7,7 +8,7 @@ namespace CuarAuthentication.DomainService.Helpers
     {
         public GeneralProfile()
         {
-
+            CreateMap<Feature, FeatureDto>().ReverseMap() ;
         }
     }
 }

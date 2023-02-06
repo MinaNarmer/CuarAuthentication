@@ -2,10 +2,14 @@
 using CuarAuthentication.Domain.Context;
 using CuarAuthentication.Domain.Identity;
 using CuarAuthentication.Domain.IPersistance;
+using CuarAuthentication.Domain.IRepositories;
 using CuarAuthentication.Domain.Persistance;
+using CuarAuthentication.Domain.Repositories;
 using CuarAuthentication.DomainService.Helpers;
 using CuarAuthentication.DomainService.IServices;
+using CuarAuthentication.DomainService.IServices.UserFeature;
 using CuarAuthentication.DomainService.Services;
+using CuarAuthentication.DomainService.Services.UserFeature;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -112,6 +116,8 @@ namespace CuarAuthentication.API
 
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IRoleService, RoleService>();
+            services.AddScoped<IUserFeatureService, UserFeatureService>();
+            services.AddScoped<IUserFeatureRepository, UserFeatureRepository>();
 
         }
         public static void AddSwagger(this IServiceCollection services)

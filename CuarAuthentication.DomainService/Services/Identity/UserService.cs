@@ -3,6 +3,8 @@ using CuarAuthentication.Domain.Helpers;
 using CuarAuthentication.Domain.Identity;
 using CuarAuthentication.DomainService.Dtos;
 using CuarAuthentication.DomainService.IServices;
+using CuarAuthentication.DomainService.IServices.UserFeature;
+using CuarAuthentication.DomainService.Services.UserFeature;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
@@ -21,16 +23,19 @@ namespace CuarAuthentication.DomainService.Services
         private readonly SignInManager<ApplicationUser> _signinManager;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly IUserFeatureService _userFeatureService;
 
         public UserService(IConfiguration configuration,
-            SignInManager<ApplicationUser> signinManager,
-            UserManager<ApplicationUser> userManager,
-            IHttpContextAccessor httpContextAccessor)
+    SignInManager<ApplicationUser> signinManager,
+    UserManager<ApplicationUser> userManager,
+    IHttpContextAccessor httpContextAccessor,
+    IUserFeatureService userFeatureService)
         {
             _configuration = configuration;
             _userManager = userManager;
             _signinManager = signinManager;
             _httpContextAccessor = httpContextAccessor;
+            _userFeatureService = userFeatureService;
         }
         public async Task<LoginResultDto> Authenticate(LoginDto dto)
         {
@@ -48,7 +53,18 @@ namespace CuarAuthentication.DomainService.Services
                     user.RefreshToken = refreshToken;
                     SetClaimsInHttpContextManualy(claims);
                     await _userManager.UpdateAsync(user);
-                    return new LoginResultDto() { Token = token, RefreshToken = refreshToken, UserName = user.UserName, UserId = user.Id };
+                    var userRoles = await _userManager.GetRolesAsync(user);
+                    var userFeatures = await _userFeatureService.GetFeaturesListByUserId(user.Id);
+                    return new LoginResultDto()
+                    {
+                        Token = token,
+                        RefreshToken = refreshToken,
+                        UserName = user.UserName,
+                        UserId = user.Id,
+                        Roles = userRoles,
+                        Features = userFeatures,
+
+                    };
                 }
                 throw new Exception("Invalid User name or password");
             }
@@ -185,13 +201,15 @@ namespace CuarAuthentication.DomainService.Services
         private async Task<IEnumerable<Claim>> GetUserClaims(ApplicationUser user)
         {
             var userRoles = await _userManager.GetRolesAsync(user);
+            var userFeature = await _userFeatureService.GetFeaturesListByUserId(user.Id);
 
             var identity = new ClaimsIdentity(new List<Claim>()
             {
                 new Claim(ClaimTypes.Name, user.UserName.ToString()),
                 new Claim(ApplicationClaims.UserId, user.Id.ToString()),
                 new Claim(ApplicationClaims.UserName, user.UserName.ToString()),
-                new Claim(ApplicationClaims.Roles, string.Join(",", userRoles)) // used for frontend
+                new Claim(ApplicationClaims.Roles, string.Join(",", userRoles)), // used for frontend
+                new Claim(ApplicationClaims.Features, string.Join(",", userFeature))
             }, "Token");
 
             // used for identity 

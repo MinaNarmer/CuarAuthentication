@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CuarAuthentication.DomainService.Dtos.UserFeature;
+
 
 namespace CuarAuthentication.DomainService.Dtos
 {
@@ -8,5 +9,7 @@ namespace CuarAuthentication.DomainService.Dtos
         public string RefreshToken { get; set; }
         public string UserName { get; set; }
         public int UserId { get; set; }
+        public IList<string> Roles { get; set; }
+        public List<FeatureDto> Features { get; set; }
     }
 }

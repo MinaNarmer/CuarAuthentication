@@ -27,8 +27,8 @@ namespace CuarAuthentication.API.Controllers
 		#region  Actions
 
 		[HttpGet]
-		[Authorize(Roles = "Admin")]
-		public IActionResult GetAll()
+        [Authorize(Roles = "Admin")]
+        public IActionResult GetAll()
 		{
 			return Ok(_roleService.GetRoles());
 		}
