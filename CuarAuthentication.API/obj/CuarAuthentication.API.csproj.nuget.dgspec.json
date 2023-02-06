@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mina Ibrahem\\source\\repos\\CuarAuthentication\\CuarAuthentication.API\\CuarAuthentication.API.csproj": {}
+    "C:\\Users\\Mina\\Source\\Repos\\CuarAuthentication\\CuarAuthentication.API\\CuarAuthentication.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mina Ibrahem\\source\\repos\\CuarAuthentication\\CuarAuthentication.API\\CuarAuthentication.API.csproj": {
+    "C:\\Users\\Mina\\Source\\Repos\\CuarAuthentication\\CuarAuthentication.API\\CuarAuthentication.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mina Ibrahem\\source\\repos\\CuarAuthentication\\CuarAuthentication.API\\CuarAuthentication.API.csproj",
+        "projectUniqueName": "C:\\Users\\Mina\\Source\\Repos\\CuarAuthentication\\CuarAuthentication.API\\CuarAuthentication.API.csproj",
         "projectName": "CuarAuthentication.API",
-        "projectPath": "C:\\Users\\Mina Ibrahem\\source\\repos\\CuarAuthentication\\CuarAuthentication.API\\CuarAuthentication.API.csproj",
-        "packagesPath": "C:\\Users\\Mina Ibrahem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mina Ibrahem\\source\\repos\\CuarAuthentication\\CuarAuthentication.API\\obj\\",
+        "projectPath": "C:\\Users\\Mina\\Source\\Repos\\CuarAuthentication\\CuarAuthentication.API\\CuarAuthentication.API.csproj",
+        "packagesPath": "C:\\Users\\Mina\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mina\\Source\\Repos\\CuarAuthentication\\CuarAuthentication.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mina Ibrahem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mina\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Mina Ibrahem\\source\\repos\\CuarAuthentication\\CuarAuthentication.DomainService\\CuarAuthentication.DomainService.csproj": {
-                "projectPath": "C:\\Users\\Mina Ibrahem\\source\\repos\\CuarAuthentication\\CuarAuthentication.DomainService\\CuarAuthentication.DomainService.csproj"
+              "C:\\Users\\Mina\\Source\\Repos\\CuarAuthentication\\CuarAuthentication.DomainService\\CuarAuthentication.DomainService.csproj": {
+                "projectPath": "C:\\Users\\Mina\\Source\\Repos\\CuarAuthentication\\CuarAuthentication.DomainService\\CuarAuthentication.DomainService.csproj"
               },
-              "C:\\Users\\Mina Ibrahem\\source\\repos\\CuarAuthentication\\CuarAuthentication.Domain\\CuarAuthentication.Domain.csproj": {
-                "projectPath": "C:\\Users\\Mina Ibrahem\\source\\repos\\CuarAuthentication\\CuarAuthentication.Domain\\CuarAuthentication.Domain.csproj"
+              "C:\\Users\\Mina\\Source\\Repos\\CuarAuthentication\\CuarAuthentication.Domain\\CuarAuthentication.Domain.csproj": {
+                "projectPath": "C:\\Users\\Mina\\Source\\Repos\\CuarAuthentication\\CuarAuthentication.Domain\\CuarAuthentication.Domain.csproj"
               }
             }
           }
@@ -85,24 +85,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.7, 6.0.7]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.7, 6.0.7]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.7, 6.0.7]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.7, 6.0.7]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -111,21 +93,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-preview.7.22377.5\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Mina Ibrahem\\source\\repos\\CuarAuthentication\\CuarAuthentication.DomainService\\CuarAuthentication.DomainService.csproj": {
+    "C:\\Users\\Mina\\Source\\Repos\\CuarAuthentication\\CuarAuthentication.DomainService\\CuarAuthentication.DomainService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mina Ibrahem\\source\\repos\\CuarAuthentication\\CuarAuthentication.DomainService\\CuarAuthentication.DomainService.csproj",
+        "projectUniqueName": "C:\\Users\\Mina\\Source\\Repos\\CuarAuthentication\\CuarAuthentication.DomainService\\CuarAuthentication.DomainService.csproj",
         "projectName": "CuarAuthentication.DomainService",
-        "projectPath": "C:\\Users\\Mina Ibrahem\\source\\repos\\CuarAuthentication\\CuarAuthentication.DomainService\\CuarAuthentication.DomainService.csproj",
-        "packagesPath": "C:\\Users\\Mina Ibrahem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mina Ibrahem\\source\\repos\\CuarAuthentication\\CuarAuthentication.DomainService\\obj\\",
+        "projectPath": "C:\\Users\\Mina\\Source\\Repos\\CuarAuthentication\\CuarAuthentication.DomainService\\CuarAuthentication.DomainService.csproj",
+        "packagesPath": "C:\\Users\\Mina\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mina\\Source\\Repos\\CuarAuthentication\\CuarAuthentication.DomainService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mina Ibrahem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mina\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -139,8 +121,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Mina Ibrahem\\source\\repos\\CuarAuthentication\\CuarAuthentication.Domain\\CuarAuthentication.Domain.csproj": {
-                "projectPath": "C:\\Users\\Mina Ibrahem\\source\\repos\\CuarAuthentication\\CuarAuthentication.Domain\\CuarAuthentication.Domain.csproj"
+              "C:\\Users\\Mina\\Source\\Repos\\CuarAuthentication\\CuarAuthentication.Domain\\CuarAuthentication.Domain.csproj": {
+                "projectPath": "C:\\Users\\Mina\\Source\\Repos\\CuarAuthentication\\CuarAuthentication.Domain\\CuarAuthentication.Domain.csproj"
               }
             }
           }
@@ -179,40 +161,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.7, 6.0.7]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.7, 6.0.7]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.7, 6.0.7]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-preview.7.22377.5\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Mina Ibrahem\\source\\repos\\CuarAuthentication\\CuarAuthentication.Domain\\CuarAuthentication.Domain.csproj": {
+    "C:\\Users\\Mina\\Source\\Repos\\CuarAuthentication\\CuarAuthentication.Domain\\CuarAuthentication.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mina Ibrahem\\source\\repos\\CuarAuthentication\\CuarAuthentication.Domain\\CuarAuthentication.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Mina\\Source\\Repos\\CuarAuthentication\\CuarAuthentication.Domain\\CuarAuthentication.Domain.csproj",
         "projectName": "CuarAuthentication.Domain",
-        "projectPath": "C:\\Users\\Mina Ibrahem\\source\\repos\\CuarAuthentication\\CuarAuthentication.Domain\\CuarAuthentication.Domain.csproj",
-        "packagesPath": "C:\\Users\\Mina Ibrahem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mina Ibrahem\\source\\repos\\CuarAuthentication\\CuarAuthentication.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Mina\\Source\\Repos\\CuarAuthentication\\CuarAuthentication.Domain\\CuarAuthentication.Domain.csproj",
+        "packagesPath": "C:\\Users\\Mina\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mina\\Source\\Repos\\CuarAuthentication\\CuarAuthentication.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mina Ibrahem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mina\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -282,26 +250,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.7, 6.0.7]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.7, 6.0.7]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.7, 6.0.7]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-preview.7.22377.5\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

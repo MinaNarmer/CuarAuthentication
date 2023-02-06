@@ -113,14 +113,14 @@ namespace CuarAuthentication.Domain.Persistance
         #endregion
 
         #region AsyncMethods
-        //public virtual Task AddAsync(T entity)
-        //{
-        //    return  dbSet.AddAsync(entity);
-        //}
-        //public virtual Task<T> GetByIdAsync(object id)
-        //{
-        //    return dbSet.FindAsync(id);
-        //}
+        public virtual async Task AddAsync(T entity)
+        {
+             await dbSet.AddAsync(entity);
+        }
+        public virtual async Task<T> GetByIdAsync(object id)
+        {
+            return await dbSet.FindAsync(id);
+        }
         public virtual Task<T> GetAsync(Expression<Func<T, bool>> where)
         {
             return dbSet.Where(where).FirstOrDefaultAsync();
@@ -132,15 +132,7 @@ namespace CuarAuthentication.Domain.Persistance
 
             return dbSet.AddRangeAsync(entities);
         }
-        //public Task<T> GetByIdRelatedTableAsync(object id, params Expression<Func<T, object>>[] includeProperties)
-        //{
-
-        //    foreach (var includeProperty in includeProperties)
-        //    {
-        //        dbSet.Include(includeProperty);
-        //    }
-        //    return dbSet.FindAsync(id);
-        //}
+      
 
         #endregion
     }

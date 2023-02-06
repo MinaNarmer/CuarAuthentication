@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using CuarAuthentication.Domain.Context;
+using CuarAuthentication.Domain.Features;
 
 namespace CuarAuthentication.Domain.Seeds
 {
@@ -17,6 +18,8 @@ namespace CuarAuthentication.Domain.Seeds
 
             context.Database.Migrate(); // apply all migrations 
             context.Database.EnsureCreated();
+
+
             if (!context.Roles.Any())
             {
                 await roleManager.CreateAsync(new ApplicationRole { Name = RolesNames.Admin, NormalizedName = RolesNames.Admin });
@@ -45,6 +48,35 @@ namespace CuarAuthentication.Domain.Seeds
 
                 await userManager.CreateAsync(player, "P@$$w0rd");
                 await userManager.AddToRoleAsync(player, RolesNames.Player);
+            }
+
+            if (!context.Features.Any())
+            {
+                var bGame = new Feature
+                {
+                    Name = "b_game",
+                    UserFeatures = new List<UserFeature>
+                    {
+                        new UserFeature
+                        {
+                            ApplicationUserId =  userManager.FindByEmailAsync("player@cura.com").Result.Id
+                        }
+                    }
+                };
+                var vCP = new Feature
+                {
+                    Name = "vip_chararacter_personalize",
+                    UserFeatures = new List<UserFeature>
+                    {
+                        new UserFeature
+                        {
+                            ApplicationUserId =  userManager.FindByEmailAsync("player@cura.com").Result.Id
+                        }
+                    }
+                };
+                context.Features.Add(bGame);
+                context.Features.Add(vCP);
+                context.SaveChanges();
             }
         }
     }

@@ -10,6 +10,8 @@ namespace CuarAuthentication.Domain.Configurations
 		{
 			builder.ToTable(name: "Users");
 			builder.HasQueryFilter(e => !e.IsDeleted);
+			builder.HasMany(u => u.UserFeatures).WithOne(x => x.User)
+				.HasForeignKey(u => u.ApplicationUserId);
 		}
 	}
 }

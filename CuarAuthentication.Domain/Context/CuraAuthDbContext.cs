@@ -1,5 +1,7 @@
 ﻿using CuarAuthentication.Domain.Common;
 using CuarAuthentication.Domain.Configurations;
+using CuarAuthentication.Domain.Configurations.Features;
+using CuarAuthentication.Domain.Features;
 using CuarAuthentication.Domain.Helpers;
 using CuarAuthentication.Domain.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -12,7 +14,8 @@ namespace CuarAuthentication.Domain.Context
     {
         public CuraAuthDbContext(DbContextOptions<CuraAuthDbContext> options) : base(options) { }
 
-
+        public DbSet<Feature> Features { get; set; }
+        public DbSet<UserFeature> UserFeatures { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -83,6 +86,11 @@ namespace CuarAuthentication.Domain.Context
             modelBuilder.ApplyConfiguration(new ApplicationUserLoginConfiguration());
             modelBuilder.ApplyConfiguration(new ApplicationRoleClaimConfiguration());
 
+            #endregion
+
+            #region UserFeature
+            modelBuilder.ApplyConfiguration(new FeatureConfiguration());
+            modelBuilder.ApplyConfiguration(new UserFeatureConfiguration());
             #endregion
 
         }
