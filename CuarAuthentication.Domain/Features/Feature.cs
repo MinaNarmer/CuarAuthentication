@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 
-
 namespace CuarAuthentication.Domain.Features
 {
     public class Feature : Entity, IDeletedEntity, IAuditEntity
@@ -15,6 +14,5 @@ namespace CuarAuthentication.Domain.Features
         public string ModificationUser { get; set; }
         public DateTime? ModificationDate { get; set; }
         public List<UserFeature> UserFeatures { get; set; }
-
     }
 }

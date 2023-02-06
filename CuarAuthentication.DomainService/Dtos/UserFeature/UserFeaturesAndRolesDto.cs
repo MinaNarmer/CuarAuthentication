@@ -1,5 +1,4 @@
 ﻿
-
 namespace CuarAuthentication.DomainService.Dtos.UserFeature
 {
     public class UserFeaturesAndRolesDto

@@ -12,8 +12,7 @@ namespace CuarAuthentication.Domain.Configurations.Features
             builder.ToTable(name: "Features");
             builder.HasMany(x => x.UserFeatures)
                 .WithOne(f => f.Feature)
-                .HasForeignKey(f=> f.FeatureId);
-            
+                .HasForeignKey(f => f.FeatureId);
         }
     }
 }

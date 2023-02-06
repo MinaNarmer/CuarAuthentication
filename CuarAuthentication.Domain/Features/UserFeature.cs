@@ -1,5 +1,4 @@
-﻿
-using CuarAuthentication.Domain.Common;
+﻿using CuarAuthentication.Domain.Common;
 using CuarAuthentication.Domain.Identity;
 
 namespace CuarAuthentication.Domain.Features

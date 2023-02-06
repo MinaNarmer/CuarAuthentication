@@ -1,6 +1,5 @@
 ﻿using CuarAuthentication.DomainService.Dtos.UserFeature;
 
-
 namespace CuarAuthentication.DomainService.Dtos
 {
     public class LoginResultDto
